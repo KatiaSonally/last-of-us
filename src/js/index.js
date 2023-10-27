@@ -13,3 +13,7 @@
 
 	- passo 6 - fazer aparecer a imagem de fundo correspondente ao botão clicado
 */
+
+//- passo 1 - dar um jeito de pegar o elemento HTML dos botões
+
+const botoesCarrossel = document.querySelectorAll('.botao');
