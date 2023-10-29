@@ -17,3 +17,6 @@
 //- passo 1 - dar um jeito de pegar o elemento HTML dos botões
 
 const botoesCarrossel = document.querySelectorAll('.botao');
+
+//- passo 2 - dar um jeito de identificar o clique do usuário no botão
+const botao1 = document.getElementById
