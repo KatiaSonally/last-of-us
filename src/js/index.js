@@ -19,4 +19,7 @@
 const botoesCarrossel = document.querySelectorAll('.botao');
 
 //- passo 2 - dar um jeito de identificar o clique do usuário no botão
-const botao1 = document.getElementById
+const botao1 = document.getElementById('botao1');
+botao1.addEventListener('click', () => {
+	
+})
