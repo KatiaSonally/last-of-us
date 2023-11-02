@@ -28,5 +28,10 @@ botao1.addEventListener('click', () => {
 	//- passo 4 - marcar o botão clicado como se estivesse selecionado
 	botao.classList.add('selecionado');
 
+	//- passo 5 - esconder a imagem ativa de fundo anterior
+	const imagemAtiva = document.querySelector('ativa');
+	imagemAtiva.classList.remove('ativa');
+
+
 
 })
