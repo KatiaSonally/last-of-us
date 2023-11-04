@@ -22,24 +22,33 @@ const imagens = document.querySelectorAll('.imagem')
 botoesCarrossel.forEach((botao, indice) => {
 	botao.addEventListener('click', () => {
 		//- passo 3 - desmarcar o botão selecionado anterior
-		const botaoSelecionado = document.querySelector('.selecionado');
-		botaoSelecionado.classList.remove("selecionado");
+		desativarBotaoSelecionado();
 
 		//- passo 4 - marcar o botão clicado como se estivesse selecionado
-		botao.classList.add('selecionado');
+		selecionarBotaoCarrossel(botao);
 
 		//- passo 5 - esconder a imagem ativa de fundo anterior
-		const imagemAtiva = document.querySelector('.ativa');
-		imagemAtiva.classList.remove('ativa');
+		esconderImagemAtiva();
 
 		//- passo 6 - fazer aparecer a imagem de fundo correspondente ao botão clicado
-		imagens[indice].classList.add('ativa');
+		mostrarImagemDeFundo(indice);
 	})
 })
-	
-	
 
+function mostrarImagemDeFundo(indice) {
+	imagens[indice].classList.add('ativa');
+}
 
+function newFunction(botao) {
+	botao.classList.add('selecionado');
+}
 
+function esconderImagemAtiva() {
+	const imagemAtiva = document.querySelector('.ativa');
+	imagemAtiva.classList.remove('ativa');
+}
 
-})
+function desativarBotaoSelecionado() {
+	const botaoSelecionado = document.querySelector('.selecionado');
+	botaoSelecionado.classList.remove("selecionado");
+}
