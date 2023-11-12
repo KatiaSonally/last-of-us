@@ -18,8 +18,7 @@
 }
 
 @media (max-width: 425px) {
-    .informacoes
-     .logo {
+    .informacoes .logo {
         max-width: 300px;
      }
 
